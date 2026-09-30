@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#6e3900", "surface-container": "#e3f1ed", "surface-container-lowest": "#ffffff", "on-surface-variant": "#414943", "tertiary-container": "#00462e", "primary-container": "#14452f", "tertiary": "#002d1d", "surface-bright": "#effcf9", "surface-tint": "#39684f", "secondary-container": "#fe932c", "on-tertiary-fixed": "#002114", "surface-container-high": "#ddebe8", "secondary-fixed": "#ffdcc3", "primary": "#002e1c", "on-primary-fixed": "#002113", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "on-tertiary-container": "#76b494", "inverse-primary": "#9fd2b4", "inverse-on-surface": "#e6f4f0", "primary-fixed": "#bbeecf", "outline-variant": "#c0c9c1", "on-primary": "#ffffff", "on-secondary-container": "#663500", "on-background": "#121e1c", "secondary": "#904d00", "on-error-container": "#93000a", "surface": "#effcf9", "error": "#ba1a1a", "tertiary-fixed-dim": "#95d4b3", "on-primary-container": "#81b296", "tertiary-fixed": "#b1f0ce", "on-error": "#ffffff", "secondary-fixed-dim": "#ffb77d", "primary-fixed-dim": "#9fd2b4", "surface-container-highest": "#d8e5e2", "surface-variant": "#d8e5e2", "outline": "#717973", "error-container": "#ffdad6", "on-secondary-fixed": "#2f1500", "surface-dim": "#cfddd9", "inverse-surface": "#273331", "surface-container-low": "#e9f7f3", "on-surface": "#121e1c", "on-tertiary-fixed-variant": "#0e5138", "background": "#effcf9", "on-primary-fixed-variant": "#204f39" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "2rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "margin": "3rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-md-mobile": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "display-lg": ["Playfair Display"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_4px_20px_-2px_rgba(28,40,38,0.05)]"><div class="w-full bg-primary-container text-on-primary py-space-xs px-margin-mobile md:px-margin text-center font-label-md text-label-md flex items-center justify-center gap-space-sm tracking-wide"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">eco</span><span>Direct from Village Farmers • 100% Pesticide-Free Certified • Next Morning Delivery</span><span class="material-symbols-outlined text-[16px] text-secondary-fixed">local_shipping</span></div><div class="w-full bg-surface-container-lowest/95 backdrop-blur-md"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><img alt="Shivam Gram Bazar Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VpxuGlCWd6vhhIuw6DLtpi3NVN_bnzVhvcQCFYvMV7MEJY6UbO53mEdzkB1v7iqkWnySXIPkvJVWw3OVAICAlIV6t18PfQRY5vU--A10f_gg8zUlK3fa0tAwSOKMuGcf3kFF3NKBt_DeRJPtHXdcFhSZNm1Z2NdOVQKKbPgYwpI9iyU3-TgEW3BXic8WnYaMCN_MAE6qRo2N__d1fW1noh7dnxopPc_QdunaVxUs_pdcqT9ci33-eGuhw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">Shivam Gram Bazar</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Direct Rural Harvest</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-full text-on-surface-variant max-w-xs w-full"><span class="material-symbols-outlined text-[18px] text-outline">search</span><input class="bg-transparent border-0 outline-none w-full text-on-surface font-body-sm text-body-sm placeholder:text-outline" placeholder="Search heirloom rice, cold-pressed oils..." type="text"/><button class="text-outline hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[16px]">tune</span></button></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm leading-none text-outline">Delivery to</span><span class="font-label-lg text-label-lg text-on-surface leading-tight font-semibold">Select Area / PIN</span></div><span class="material-symbols-outlined text-[16px] text-outline ml-1">expand_more</span></div><div class="flex items-center gap-space-md"><button aria-label="Shopping Cart" class="relative p-space-sm rounded-full hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></button><a class="hidden sm:inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-space-sm px-space-lg rounded-lg shadow-[0_4px_14px_rgba(20,69,47,0.18)] transition-all duration-200" href="#fresh-harvest"><span>Shop Fresh</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ring-2 ring-surface-container"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full bg-surface-container-low/80 backdrop-blur-sm hidden md:block"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin"><nav class="flex items-center gap-space-sm py-space-xs overflow-x-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs whitespace-nowrap transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="our-story" href="#">Our Story</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="fresh-harvest" href="#">Fresh Harvest</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="artisanal-pantry" href="#">Artisanal Pantry</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="farmer-cooperatives" href="#">Farmer Cooperatives</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="why-us" href="#">Why Us</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="contact-order" href="#">Contact / Order</a></nav></div></div></div></header><main class="w-full pt-32 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full -mt-32 pt-36 pb-space-xl overflow-hidden bg-gradient-to-b from-surface-container via-surface to-surface-bright">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<!-- Breadcrumb / Overline -->
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-1.5 rounded-full mb-space-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase">Direct Mandi Harvest • 100% Traceable</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-primary tracking-tight leading-tight">
+            Authentic Village Harvest, <span class="italic font-normal text-secondary">Delivered Pure</span> to Your Table
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+<strong>Shivam Gram Bazar</strong> bridges rural farming cooperatives directly to conscious households. Experience cold-pressed oils, unpolished indigenous grains, stone-ground flours, forest honey, and seasonal organic harvests without middlemen.
+          </p>
+<!-- Dual CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-2 bg-primary-container hover:bg-tertiary-container text-on-primary font-label-lg text-label-lg px-space-lg py-3.5 rounded-full shadow-md transition-all duration-200 hover:shadow-lg" href="#market-showcase">
+<span>Explore Fresh Harvest</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-lg text-label-lg px-space-lg py-3.5 rounded-full shadow-sm transition-all duration-200" href="#farmer-roots">
+<span class="material-symbols-outlined text-[18px] text-secondary">park</span>
+<span>Our Village Story</span>
+</a>
+</div>
+<!-- Trust Badges Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-md w-full">
+<div class="bg-surface-container-lowest/90 p-space-sm rounded-lg shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">2,400+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Partner Farmers</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/90 p-space-sm rounded-lg shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">100% Traceable</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch Provenance</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/90 p-space-sm rounded-lg shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">format_image_left</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Zero Chemicals</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">No Preservatives</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/90 p-space-sm rounded-lg shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Farm Direct</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dawn Harvest Cold-Chain</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Harvest Showcase Composition -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Sunlit organic rural Indian harvest basket with earthen clay pot filled with golden clarified cow ghee, glass bottle of mustard oil, rustic wooden scoops of ancient grains, and raw honeycomb against a textured linen and unbleached cotton background in warm golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3VPjR40elduqQOfm8t3kAtTDXME8cuRn3pcAzKQCFa_7nNyWLhh_KUFpPJVCMwo-aD5u96ru0wMeBwo_lp36IA92OR7xed-UgwvhaoM7WRy4bnhnGjUj2ibEVOnqujBSclmjcgC8NaaIscomyOJYEqZUq5IEqyjesM84ZO2M10Dyj9SVd646tmBb0BRfHnXie8xnxJ2wZP5qvfzDyquoJYWrvejurhVo6mKqMx_zRsVKzQkafqdYy5Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Floating Verified Card -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-lg shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">workspace_premium</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Standard Of Purity</span>
+<span class="font-label-md text-label-md text-primary font-semibold">FSSAI Certified Village Units</span>
+</div>
+</div>
+<!-- Bottom Floating Showcase Details -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-space-md rounded-xl shadow-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Today's Fresh Milling</span>
+<span class="inline-flex items-center text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary mr-1.5"></span> Batch #SGB-2498
+                </span>
+</div>
+<p class="font-title-md text-title-md text-primary">Sharbati Gold Wheat &amp; Vedic Bilona Ghee Reserve</p>
+<div class="mt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Directly sourced: Sehore &amp; Gir Sanctuary</span>
+<span class="text-primary font-bold">100% Raw Unadulterated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE PILLARS SECTION -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Guaranteed Integrity</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">The Shivam Gram Bazar Promise</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Every harvest shipped through <strong>Shivam Gram Bazar</strong> complies with sacred agrarian ethics, transparent soil testing, and ancestral artisan milling traditions.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">handshake</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">Direct from Gram Roots</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Middlemen are eliminated. 100% of fair compensation is disbursed straight to village cooperative bank ledgers without delay.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span>Fair Price Guarantee</span>
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">nest_clock_farsight_analog</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">Traditional Preparation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Wood-pressed oils (Kachi Ghani below 38°C) and slow chakki-fresh stone grinding maintain natural nutrients and native fiber.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span>Zero Thermal Degradation</span>
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">qr_code_scanner</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">Harvest Transparency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Scan individual package QR codes to view lab moisture reports, crop harvest dates, and the name of the farmer who tilled the field.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span>Farm Batch Ledger</span>
+<span class="material-symbols-outlined text-[16px]">fact_check</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">recycling</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">Eco-Conscious Packaging</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Packaged with unbleached handloom jute bags, lead-free amber glass, and zero plastic inner linings to protect Mother Earth.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span>100% Recyclable Liners</span>
+<span class="material-symbols-outlined text-[16px]">forest</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED BAZAR SHOWCASE -->
+<section class="w-full py-space-xl bg-surface" id="market-showcase">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Village Marketplace</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Curated Daily Essentials</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          From indigenous Gir cow butter churns to cold-pressed oilseeds, experience unblemished pure nourishment straight from <strong>Shivam Gram Bazar</strong>.
+        </p>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center justify-start lg:justify-center gap-space-xs overflow-x-auto pb-space-sm mb-space-xl no-scrollbar">
+<button class="bg-primary text-on-primary font-label-md text-label-md px- space-md py-2 rounded-full shadow-sm whitespace-nowrap">All Essentials</button>
+<button class="bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-md py-2 rounded-full whitespace-nowrap transition-colors">Cold-Pressed Oils</button>
+<button class="bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-md py-2 rounded-full whitespace-nowrap transition-colors">Indigenous Millets &amp; Grains</button>
+<button class="bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-md py-2 rounded-full whitespace-nowrap transition-colors">Desi A2 Ghee &amp; Dairy</button>
+<button class="bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-md py-2 rounded-full whitespace-nowrap transition-colors">Forest Spices &amp; Herbs</button>
+<button class="bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md px-space-md py-2 rounded-full whitespace-nowrap transition-colors">Farm-Fresh Sweeteners</button>
+</div>
+<!-- Product Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Traditional Indian glass jar of golden Vedic A2 Bilona cow ghee sealed with red raw twine and earthen wax against organic village farm background in warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK6drutz2Jqg4tznmMRFPUYSH_uivOrJZk5KNKGwZ_h-7byhJp7pH1z3saSSJnOkwX-C3DbYxbQvQ4ICg6cf7CFgD7hJp3U2kbL7Z73xROcgZdVevEVUzcavi7lZ-ol30QWiJLvTCKbsYePB9W8PV2FHqwa6tK1c4XKSuXRjoq1xPcIdbkUT44LxqAAsMilxo4a8YtS_-JViNLB7E1q-qzIgo6fPvk4RP0W6iq4TEHzRmU4o9lNa828w"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Bestseller</span>
+<span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-2 py-0.5 rounded shadow">Gir Cow Herd</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Junagadh, Gujarat</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (480)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Vedic Bilona Gir Cow A2 Ghee</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Slow-churned in earthen curd pots using curd cultured from indigenous pasture-fed Gir cows.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">500ml Jar</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹850</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Traditional dark amber glass bottle of wood pressed organic yellow mustard oil with yellow mustard flowers and raw seeds on rustic linen surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-4xDNxgGx9NZt7XUuvhyBX526gFQNUbQNgnDd8PyUvGbvs6yLV9NsPEaJdaI86LGtiEJTGXWhTjkshXfJ1SUEQdgGB7IOHcAzUFHH9SAwYADIpbD9hcP6wvefqjLOdh0vpi_qDrQkcM0ehenPvlzLtXOUsfgEykRkmz5DgN9fmWgY4Mz9-2MHYYU2lOR80luW2cnkWEuNqECwp_ulloyX4SsoIPL0-jVPAmu5VMVFtSvGn2YO7U8pqQ"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Wood-Pressed</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Alwar, Rajasthan</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (312)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Organic Kachi Ghani Mustard Oil</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Cold-extracted on slow neem wood mills under 38°C to safeguard pungency and natural antioxidants.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1 Litre Bottle</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹240</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A rustic handwoven burlap bag of unpolished aromatic Indrayani rice with scattered grain kernels in soft natural farm sunshine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6aO_foRnZy1cqMIcE-YW9B4UX5Dhr7G4DBKdD8INKIEjLNNU0jR-K7pP_lHpQWS_XaqHDN1TuOB_VbMsN8yYd9U0KTRTPURaPWFFUPNGlbcTgX3N7MuZPrAWVOcaqtvmSL0akCFN39rClw6R8A_Hy8wC5kRYa-Y_oqEFSSsB7bSEYFYXPjyB3iiexbOv7Ay_OsZpjSyZttpXOgOSyl7c5kjSOkyYyuMM2MZ6bBywZKKObFZeIgkNLHg"/>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Heirloom</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Maval, Maharashtra</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.8 (215)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Hand-Pounded Indrayani Fragrant Rice</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Soft, aromatic sticky rice naturally irrigated by Sahyadri hill streams, unpolished with high bran retention.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">2kg Bag</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹310</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A crystal jar of raw unprocessed wild Himalayan forest honey with natural beeswax honeycomb pieces against warm pine forest backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_OVYPpatZerYYXrer1qTDr0rZOT3koitmsL93wDsy_fHmztYfftDR6Qa3TfOV3niv4hcUFl37zrKwOQsExlH5PXPlQj3LGNOlV3UoCOyzsnnR-s1cZc37OWXoWuS9KAj9zoyoypyxKuJS1rIOOTioJ3fTHIQKG5dYbWb9_pnqvYNY2zlgoe30d76wRXc_9TMoxWTFWkXz028SAPkbP7MjbszWy377PyCYpG-tPSwT1lSffDRU588W9A"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Wild Harvested</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Sundarbans Forest</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 5.0 (189)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Raw Multifloral Mangrove Honey</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Wild bee forage nectar, completely unfiltered, unpasteurized, retaining all live beneficial pollen and enzymes.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">400g Jar</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹460</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Golden organic jaggery powder and raw unrefined Desi Khand crystalline sugar in clay bowls on coarse unbleached cotton" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXxNeuya2_MDyeAKTqvIFULq-0ZHWUKpE88mhTOmnVA5oiqg8k_vNxMSUYerZnZOTFGkUzhQp5pmOnzrj-D826mfwej6Qn5dkquOHn8FcBLQLenFkaAGkZkHhk_zveo8ObvO0Qn2GLvlDSG7eWf1iSxUFUDlzx0r5dXryq7N3S7EUhQOoP_zy4R6OcZP5AY7kb3F2v3rm-1gMAQtTfnF9FYBl3zz23NJFgPuT7GFiX0ocx8I__-VXYiw"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Unrefined</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Kolhapur, Maharashtra</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (420)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Desi Khand &amp; Organic Jaggery Powder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Sugarcane juice boiled with okra wild herb clarifying agents, chemical-free and packed with natural minerals.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1kg Pouch</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹120</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Handcrafted fabric sack overflowing with whole golden Sharbati wheat grains and fresh stone ground whole wheat flour in rustic village ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ0W0B7l9C6tVMT6gIvEXkYI3gvPQteXEwRF7n4XX7AlMsjhzZrX-gtvPewLBYqdClbG3qAXnNESG6solBRdPD5bzOZf3x463WtCpuuQayrCWBNJuBDIclZuoKE5DghZ8ue09VB9bSgH2hTb_1RvwusGwauoPRDCfEWmsLdz-n-f83gu-M4hZRyEkCZKXr5gDhek4sS-uAfe8J0QItSpI5mXrY4KHzzBYZeRdt49LwFwFcbtSJ-dqgfg"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Stone-Ground</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Sehore, Madhya Pradesh</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (530)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Traditional Chakki Sharbati Atta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Rain-fed black soil Sehore golden grains, milled slowly on real stone chakkis without heat build-up.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">5kg Eco-Sack</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹340</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Rustic terracotta bowl overflowing with golden and reddish ancient Indian millets including Kodo and Little Millet in warm kitchen light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2eFBRAZcbVZJG8iRRah61Z6pTqGdDvGARHJkiNNF8c64ZAmmBUG8TCCz13-bVj2dF0nwkI1OKq_b8PWOX36qt9FjGvKSq52PQY0bpXPfuuK6RX4Jqh_VPzm4YWrRaNaGsvNSHzsRnAq1EK12MafPYWba2FnFW3zLoc9qMqRd94U9nL8S9AM6ZXxqkXKHQ9DZvf2s8K5ZsC6RmgxpuJL_yzbaVC5gnnljONQ01LRg08njtROnkwqY5cg"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Ancient Superfood</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Dindori, Tribal Belt</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.8 (144)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Heirloom Kodo &amp; Little Millet Medley</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Native drought-resilient supergrains, unpolished, low glycemic index, and rich in natural bio-minerals.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1kg Pack</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹190</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 8 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vibrant rich orange-yellow raw turmeric powder beside dried whole turmeric rhizomes in handcrafted wooden mortar pestle setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF26rwtUn_Cc4z0Zz8ltEU7AYIIIkNjmKfgA5JItFX7s8TODSXre4xVbo93uaVw7fJFv2V66x0vovQywvAYdjgIw3Q_beNy9IyOdK8hChuAEarPFTjkWOgv_Lte8pa3QuHOvrXqRERwgwpeuxnsCVg0AxH2gGaY6mlKhmaS_xmRwDuvQm4ceY2IQJI7V25ahScCR7bjnX5EKaH5lX7wHKhgGr--zHUmqGdsR-efBxQtMRkn8xyYLypEw"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">5%+ Curcumin</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Salem, Tamil Nadu</span>
+<span class="flex items-center text-secondary"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (298)</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Stone-Ground Salem High-Curcumin Haldi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Rich in essential oils, pounded on water-cooled stone grinders without lead-chromate adulterants.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">250g Glass Jar</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹160</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE FARM-TO-KITCHEN JOURNEY -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Traceable Supply Path</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">The Farm-to-Kitchen Journey</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          How <strong>Shivam Gram Bazar</strong> protects the agrarian lifecycle from sowing to your family meal.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">01</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">agriculture</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Ethical Gram Harvest</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Farmers belonging to regional cooperatives harvest crops at peak natural ripeness using indigenous, pesticide-free practices.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Soil tested • Zero synthetic urea</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">02</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">wb_sunny</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Natural Sun-Drying</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Harvests are naturally spread on clean village courtyards under direct sunlight for moisture optimization and hand-winnowed.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Traditional hand-grading</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">03</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">science</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Lab-Tested Milling</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Small batch cold pressing, slow stone milling, and mandatory testing for chemical residues, aflatoxins, and heavy metals.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>QR-indexed certification</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">04</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">local_shipping</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Direct Doorstep Delivery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Shipped within eco-friendly protective crates and sealed recyclable containers directly to urban homes with fresh morning dispatch.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Next morning transit</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FARMER SPOTLIGHT (MEET OUR COOPERATIVES) -->
+<section class="w-full py-space-xl bg-surface-container-lowest" id="farmer-roots">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Community Stewardship</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Meet Our Gram Cooperatives</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Behind every jar and sack at <strong>Shivam Gram Bazar</strong> is an Indian farming family receiving guaranteed ethical dividends.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Farmer 1 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="w-full h-56 bg-surface-container-highest relative">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian farmer standing with dignity in a sunny golden wheat field wearing a traditional white turban and cotton kurta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO5PjcExbkH7dG6Q1fO3b_3zuslaRW803mgqoKpXlktqpoZNJZUiBtIJcsTTVTNCu-GrJkW7oiqYM5zvqkTVkrB7Gn8O9gSnRYQ-MAo631G6oDjfE9CwJRYn8CJuH3fesMxEXdyu7EaJVo4fR0GophSuNosEbo0AUPLq2nkABZFnocUwgHFT1MTCLHZ9zTkSFs60-OJkvSo-TrTKBQdrjQKEJDWk57Yu5eNQny5RpTmfyI6jZMBDuEjw"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 px-3 py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Bundelkhand, UP
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Heritage Pulse Collective</span>
+<h3 class="font-title-lg text-title-lg text-primary mt-1">Ram Singh &amp; 80 Gram Families</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic mt-3">
+                "Before Shivam Gram Bazar, we suffered severe auction cuts at mandis. Now, our indigenous Arhar dal and Chana are sold at genuine dignity prices."
+              </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center justify-between border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-primary font-semibold">120 Acres Certified Natural</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Partner since 2021</span>
+</div>
+</div>
+</div>
+<!-- Farmer 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="w-full h-56 bg-surface-container-highest relative">
+<img class="w-full h-full object-cover" data-alt="An Indian woman agricultural cooperative leader gently caring for indigenous Gir cows in a peaceful rural dairy sanctuary setting at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4aioW4EgEcWjmbZN5WiKuFTXp1oCj-0mE8glblu7C6gb444kwKUwQg6CJ45kMztvDdvruyVX7YGBXJ2_OoVj_cp46Dby9Zh2wA9t2-wYh-ohttCLbWTd0Et8Wna1uYRkEsW8rF-EwQd2AT09fzCOoaePZ1HkUFtczoTt_UI77CaPcpRGyO4h4-y1RypAi9rxFL5h6krif10f4wasXgH_kJ1Jq-GeOE5RghfbHYURT_4mCYARTfLu8Jg"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 px-3 py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Gir Somnath, Gujarat
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Women's Dairy Self-Help Group</span>
+<h3 class="font-title-lg text-title-lg text-primary mt-1">Radha Devi &amp; Bilona Artisans</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic mt-3">
+                "Our Gir cows are honored family members. We churn curd slowly in wooden vessels before sunrise to make authentic A2 Bilona ghee."
+              </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center justify-between border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-primary font-semibold">45 Rural Women Empowered</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Partner since 2022</span>
+</div>
+</div>
+</div>
+<!-- Farmer 3 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="w-full h-56 bg-surface-container-highest relative">
+<img class="w-full h-full object-cover" data-alt="An experienced Indian oilseed farmer holding handfuls of dark organic mustard and sesame seeds beside a traditional wooden oil press ghani" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByrx3tZdZJEEgi7HBRFnK6G8fYFltYBz3lxBlPaIYsvNDYxe0-moZQ5L6ny3LJ6TZHRYhEijb_SfQrHjlRQYt6oTmPT1uv4FGn6snzkqirA1Zwm9xBF-CxKj-CBfjUMDBzEO_E7AlN2Gkbx_NYOGKLZUFrTTybaNHwmJvJHuKhN2ueLBebRFVR-f5NXlkMWutm1pJTyaENajoEIY8lR7g2GmQyJlw1uOEj8kFihdyzksVbWUz43ozxoA"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 px-3 py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Satara, Maharashtra
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Wood-Press Guild</span>
+<h3 class="font-title-lg text-title-lg text-primary mt-1">Devendra Patil &amp; Oil Craftsmen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic mt-3">
+                "Industrial solvents destroy oil nutrition. With Shivam Gram Bazar, we keep the ancient slow wood Ghani alive, preserving the life in every droplet."
+              </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center justify-between border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-primary font-semibold">100% Cold Process Cold-Chamber</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Partner since 2020</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOMER LOVE & COMMUNITY REVIEWS -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Urban Kitchen Trust</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Voices From Our Community</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Discover how switching to <strong>Shivam Gram Bazar</strong> rekindled nostalgic aromas and wellness across 18,000+ households.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              "The aroma of Shivam Gram Bazar's Gir Cow A2 Ghee when heated on hot Phulkas immediately brought back memories of my grandmother's village kitchen. Incredible purity."
+            </p>
+</div>
+<div class="flex items-center gap-3 mt-space-lg pt-space-xs border-t border-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-label-md">
+              AN
+            </div>
+<div>
+<span class="font-title-md text-title-md text-primary block leading-none">Ananya Narang</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verified Subscriber • Bengaluru</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              "Scanning the QR code on our Sharbati Atta to see the harvest date and farmer details gave our whole family immense confidence. Zero bloating, excellent digestibility!"
+            </p>
+</div>
+<div class="flex items-center gap-3 mt-space-lg pt-space-xs border-t border-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary font-bold flex items-center justify-center font-label-md">
+              RM
+            </div>
+<div>
+<span class="font-title-md text-title-md text-primary block leading-none">Rajesh Malhotra</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verified Buyer • Mumbai</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              "Their Kachi Ghani mustard oil actually has that natural pungent fragrance that commercial refined oils lost decades ago. Packaging in glass bottles was spotless."
+            </p>
+</div>
+<div class="flex items-center gap-3 mt-space-lg pt-space-xs border-t border-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center font-label-md">
+              SD
+            </div>
+<div>
+<span class="font-title-md text-title-md text-primary block leading-none">Dr. Sunita Deshmukh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verified Buyer • Pune</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MONTHLY SUBSCRIPTION BOX & QUICK INQUIRY -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Monthly Box Card -->
+<div class="lg:col-span-7 bg-primary text-on-primary rounded-xl p-space-xl relative overflow-hidden shadow-lg flex flex-col justify-between">
+<div class="relative z-10">
+<span class="inline-block bg-secondary text-on-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider px-3 py-1 rounded-full mb-space-md">
+              Save 15% With Subscriptions
+            </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight mb-2">
+              Shivam Gram Bazar Monthly Family Pantry Box
+            </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim max-w-lg mb-space-lg">
+              Tailor a monthly scheduled delivery of stone-ground atta, cold-pressed oils, native pulses, and Gir cow ghee. Pause, swap, or cancel anytime with zero friction.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mb-space-lg text-primary-fixed-dim font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span>Priority Morning Harvest Dispatch</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span>Customizable Item Quantities</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span>Free Recyclable Glass &amp; Sack Returns</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span>Direct Farmer Seasonal Gift Included</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg px-space-lg py-3 rounded-full shadow transition-all duration-200">
+              Build Your Monthly Pantry Box
+            </button>
+<span class="text-on-primary-container font-label-sm text-label-sm">Starting at ₹2,199 / month</span>
+</div>
+</div>
+<!-- Quick Order & Bulk Inquiry Form -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Connect With Us</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-2">Institutional &amp; Quick Order</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Order bulk quantities for residential societies, organic stores, or request assistance from our <strong>Shivam Gram Bazar</strong> village helpline.
+            </p>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Shivam Gram Bazar! Our harvest manager will contact you shortly.');">
+<div>
+<label class="block font-label-sm text-label-sm text-primary font-semibold mb-1">Your Full Name</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none" placeholder="e.g. Meera Sharma" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-primary font-semibold mb-1">Phone / WhatsApp</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none" placeholder="+91 98765 43210" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary font-semibold mb-1">Pin Code</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none" placeholder="e.g. 400001" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary font-semibold mb-1">Items of Interest / Requirement</label>
+<textarea class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none resize-none" placeholder="Tell us what you need (e.g., 50kg Sharbati Atta, cold pressed oils, society group order)..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-3 rounded-lg shadow-sm transition-colors mt-2" type="submit">
+                Submit Order Inquiry
+              </button>
+</form>
+</div>
+<!-- Direct WhatsApp Ordering Callout -->
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">chat</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Prefer WhatsApp Ordering?</span>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-bold hover:underline" href="https://wa.me/" target="_blank">Chat With Gram Desk →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[22px]">agriculture</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">Shivam Gram Bazar</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Purity Rooted in Soil</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Direct from our village clusters to your kitchen altar. We partner with over 45 certified pesticide-free farmer collectives, delivering unadulterated cold-pressed oils, native pulses, heirloom grains, and morning harvests.</p><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-primary-container bg-primary-container px-space-md py-space-sm rounded-full w-fit"><span class="material-symbols-outlined text-[16px]">verified</span><span>100% Traceable Rural Provenance</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary font-semibold mb-space-xs">Quick Links</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Village Marketplace</a></li><li><a class="hover:text-on-surface transition-colors" data-path="our-story" href="#">The Rural Charter</a></li><li><a class="hover:text-on-surface transition-colors" data-path="fresh-harvest" href="#">Seasonal Produce</a></li><li><a class="hover:text-on-surface transition-colors" data-path="farmer-cooperatives" href="#">Producer Mandis</a></li><li><a class="hover:text-on-surface transition-colors" data-path="contact-order" href="#">Bulk &amp; Institutional Supply</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary font-semibold mb-space-xs">Categories</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" href="#">Wood-Pressed Oils</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Native Heirloom Rice</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Stone-Ground Spices</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Forest Honey &amp; Jaggery</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Dawn Picked Veggies</a></li></ul></div><div class="lg:col-span-4 flex flex-col gap-space-md"><span class="font-title-md text-title-md text-primary font-semibold">Harvest Letter &amp; Updates</span><p class="font-body-sm text-body-sm text-on-surface-variant">Subscribe for weekly batch releases, seasonal harvest calendars, and tales from our farmer collectives.</p><div class="flex items-center gap-space-xs bg-surface-container-lowest p-1.5 rounded-lg shadow-sm"><span class="material-symbols-outlined text-[20px] text-secondary pl-2">grain</span><input class="w-full bg-transparent border-0 outline-none text-on-surface font-body-sm text-body-sm px-space-xs placeholder:text-outline" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-container transition-colors" type="button">Subscribe</button></div><div class="flex items-center gap-space-md pt-space-xs"><div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">task_alt</span><span>Lab Tested</span></div><div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">task_alt</span><span>Fair Mandi Price</span></div><div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">task_alt</span><span>No Middlemen</span></div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Shivam Gram Bazar. All rights reserved.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><span>FSSAI Lic. #10023021000492</span><span>•</span><span>Village Cluster Support Unit</span><span>•</span><a class="hover:text-on-surface transition-colors" href="#">Privacy &amp; Traceability</a></div></div></div></footer></body></html>
